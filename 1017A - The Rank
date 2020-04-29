@@ -1,0 +1,32 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+
+    int q,i,j,e,g,m,h,sum=0,count=1;
+
+    cin >> q;
+    for(i=0;i<q;i++){
+        sum=0;
+        cin >> e >> g >> m >> h;
+        sum=e+g+m+h;
+        if(i==0){
+            j=sum;
+        }
+        if(j<sum){
+            count++;
+        }
+
+    }
+    cout << count << "\n";
+
+
+    return 0;
+
+}
+
+
+
+
